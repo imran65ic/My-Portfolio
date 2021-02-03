@@ -1,0 +1,499 @@
+@import'utilities.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;700&display=swap');
+
+
+:root {
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --pure: #FFFFFF;#2F2B2B
+    --light: #F2F2F2;
+    --ternary: #898989;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*============================================================
+                    Header section 
+============================================================*/
+
+header {
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 90%, 0 100%);
+}
+
+header nav .left a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--pure);
+    margin-right: 2rem;
+    transition: all .4s ease;
+    font-weight: 600;
+}
+
+header nav .left a:hover {
+    color: var(--primary);
+}
+
+header nav {
+    padding: 2rem 0;
+    padding-bottom: 1rem;
+}
+
+header nav .branding {
+    margin-right: 2rem;
+}
+
+/*============================================================
+                    Hero section 
+============================================================*/
+
+.hero .left img {
+    width: 330px;
+    background: #161616D9;
+}
+
+
+.hero .right {
+    color: var(--pure);
+    height: 350px;
+}
+
+.hero .right h6 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span {
+    color: var(--primary);
+}
+
+.hero .right p {
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+}
+
+.hero .right {
+    margin-top: -7rem;
+}
+
+/*============================================================
+                    About me section 
+============================================================*/
+.about {
+    margin: 7rem 0;
+}
+
+.about h6 {
+    font-weight: 300;
+}
+
+.about .about-me-img {
+    width: 350px;
+}
+.about .me{
+    width: 300px;
+}
+
+.about h1 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.about h1 span {
+    color: var(--primary);
+}
+
+.about h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.about p {
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    font-size: .8rem;
+}
+
+.social {
+    margin-top: 3rem;
+    display: flex;
+}
+
+.social a {
+    background: var(--dark);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease;
+}
+
+.social a img {
+    width: 100%;
+    height: 100%;
+    padding: .6rem;
+}
+
+.social a:hover {
+    background: var(--primary);
+    cursor: pointer;
+}
+
+/*============================================================
+                    Services section 
+============================================================*/
+
+.services {
+    background: var(--light);
+    padding: 6rem 0;
+}
+
+
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6rem 2rem;
+}
+
+.card {
+    background: var(--pure);
+    padding: 3rem 2rem;
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+    transition: all .5s ease;
+    height: 250px;
+}
+
+.card img {
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 7rem;
+    width: 7rem;
+}
+
+.card h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: .6rem;
+}
+
+.card p {
+    color: var(--ternary);
+    font-weight: 200;
+    line-height: 1.6;
+    font-size: .8rem;
+}
+
+.card:hover {
+    background: var(--dark);
+    cursor: pointer;
+}
+
+.card:hover h2,
+.card:hover p {
+    color: var(--pure);
+}
+
+/*============================================================
+                    Freelancing section 
+============================================================*/
+
+.freelancing {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.65)), url(../Images/camera.png);
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 83%, 0 100%);
+    font-family: 'Lato', sans-serif;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.freelancing h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+
+.freelancing p {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 3rem;
+}
+.text{
+    width: 800px;
+    margin-bottom: 3rem;
+}
+
+/*============================================================
+                    Client section 
+============================================================*/
+.slider .slide {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.9;
+    font-weight: 200;
+    font-family: 'Lato', sans-serif;
+    padding: 0 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider .slide img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    object-fit: cover;
+}
+
+.slider .slide p {
+    margin-bottom: 2rem;
+    color: var(--ternary);
+}
+
+.reviews {
+    padding: 5rem;
+}
+.reviews .dots .dot{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+.reviews .dots{
+    margin-top: 3rem;
+}
+.reviews .dots button{
+    font-size: 0;
+    width: 10px;
+    height: 5px;
+    background: var(--ternary);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30%;
+    margin-right: .4rem;
+}
+.reviews .dots li.slick-active button{
+    background: var(--primary);
+    width: 22px;
+}
+/*============================================================
+                    Works section 
+============================================================*/
+.works {
+    background: var(--light);
+    padding: 5rem 0;
+}
+
+.works .card-wrapper {
+    grid-gap: 2rem !important;
+}
+
+.works .cards img {
+    width: 100%;
+    height: 100%;
+}
+
+.works .cards {
+    position: relative;
+    height: 200px;
+}
+
+.works .cards .overlay a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.works .cards .overlay span {
+    color: var(--light);
+}
+
+.works .cards .overlay {
+    position: absolute;
+    background: rgba(61, 211, 271, 0.9);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2;
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+.works .cards:hover .overlay {
+    opacity: 1;
+}
+
+/*============================================================
+                    Blogs section 
+============================================================*/
+.blogs {
+    background: var(--dark);
+    padding: 5rem 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 95%, 0 100%);
+    padding-bottom: 16.5rem;
+    color: var(--pure);
+}
+
+.blog-img img {
+    width: 100%;
+}
+
+.blog-card {
+    height: 700px;
+    background: var(--pure);
+    
+}
+
+.cards-content {
+    padding: 2rem;
+}
+
+.cards-content p {
+    padding: 2rem 0;
+    font-size: 1rem;
+    font-weight: 300;
+
+    color: var(--ternary);
+}
+
+.cards-content .time {
+    color: var(--ternary);
+    font-size: .75rem;
+    font-weight: 200;
+    margin: .5rem 0;
+    margin-bottom: 2rem;
+}
+
+.blog-card a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--dark);
+    display: block;
+}
+
+.blog-card a:hover {
+    color: var(--primary);
+}
+
+/*============================================================
+                    Contact section 
+============================================================*/
+.contact-card h2 {
+    font-weight: 400;
+}
+
+.contact-card h5 {
+    font-weight: 200;
+    color: var(--ternary);
+}
+
+.contact {
+    padding: 5rem 0;
+    text-align: center;
+    line-height: 2;
+}
+
+.contact img {
+    width: 50%;
+}
+
+.contact input,
+textarea {
+    outline: none;
+    border: 1px solid var(--ternary);
+    padding: .7rem;
+    color: var(--ternary);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.input-wrap {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+}
+
+.input-wrap-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+/*============================================================
+                    Footer Section
+============================================================*/
+footer {
+    background: var(--dark);
+    text-align: center;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+footer .social a {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    
+}
+
+footer .social a img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    
+}
+
+.copyright {
+    margin-top: 3rem;
+    color: var(--ternary);
+}
